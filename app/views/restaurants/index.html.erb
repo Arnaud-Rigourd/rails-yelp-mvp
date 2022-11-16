@@ -3,11 +3,9 @@
 <ul>
   <% @restaurants.each do |r| %>
     <li>
-      <%= link_to r.name, restaurant_path(r.id) %>
+      <%= link_to r.name, restaurant_path(r.id), class: "restaurant-name" %>
     </li>
   <% end %>
 </ul>
 
-<%= link_to "+ Add new restaurant", new_restaurant_path %>
-
-<% console %>
+<%= link_to "+ Add new restaurant", new_restaurant_path, class: "my-btn" %>
